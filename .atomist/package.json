@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@atomist/rugs": "^0.25.0",
+    "mustache": "^2.3.0"
+  },
+  "devDependencies": {
+    "@types/mustache": "^0.8.29"
+  }
+}

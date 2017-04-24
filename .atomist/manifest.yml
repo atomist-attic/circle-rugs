@@ -1,0 +1,4 @@
+group: "atomist"
+artifact: "circle-handlers"
+version: "0.0.1"
+requires: "0.26.1"
