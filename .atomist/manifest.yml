@@ -1,4 +1,4 @@
-group: "atomist"
-artifact: "circle-handlers"
-version: "0.0.1"
+group: atomist
+artifact: circle-rugs
+version: "0.1.0"
 requires: "0.26.1"
