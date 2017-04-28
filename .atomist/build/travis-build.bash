@@ -4,7 +4,7 @@
 set -o pipefail
 
 declare Pkg=travis-build
-declare Version=0.5.0-circle
+declare Version=0.5.0
 
 function msg() {
     echo "$Pkg: $*"
@@ -34,8 +34,6 @@ function main () {
             return 1
         fi
     fi
-    # override version so we can publish today
-    version=0.34.0
     msg "rug CLI version: $version"
 
     if ! ( cd .atomist && tslint '**/*.ts' --exclude 'node_modules/**' ); then
