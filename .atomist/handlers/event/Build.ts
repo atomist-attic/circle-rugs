@@ -58,6 +58,20 @@ class Built implements HandleEvent<Build, Build> {
             }
         }
 
+        message.addAction({
+                label: "log an issue",
+                instruction: {
+                    kind: "command",
+                    name: { group: "atomist", artifact: "github-rugs", name: "CreateGitHubIssue" },
+                    parameters: {
+                        title: `${build.commit.author.log} has messed something up again:  ${build.buildUrl}`,
+                        repo: build.repo.name,
+                        owner: build.repo.owner,
+                    },
+                },
+            });
+
+
         plan.add(message);
         return plan;
     }
