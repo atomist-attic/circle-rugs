@@ -1,7 +1,6 @@
 # Atomist 'circle-rugs'
 
 [![Build Status](https://travis-ci.org/atomist/circle-rugs.svg?branch=master)](https://travis-ci.org/atomist/circle-rugs)
-[![Slack Status](https://join.atomist.com/badge.svg)](https://join.atomist.com/)
 
 A set of Rugs that that integrate with [Circle CI][circle].
 
